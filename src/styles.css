@@ -3,6 +3,7 @@ body{
     background-color: rgb(231, 230, 230);
     padding: 10px;  
     font-family: Verdana, Geneva, sans-serif; 
+    max-width: 800px; 
 }
 h1{
     font-family: Impact, Charcoal, sans-serif;
