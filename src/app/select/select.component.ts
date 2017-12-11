@@ -27,7 +27,7 @@ export class SelectComponent implements OnInit {
     }
 
     randomizeChars(){
-        this._charService.randomize(this.character)
+        this._charService.makeChoiceArray(this.character)
     }
 
 }
