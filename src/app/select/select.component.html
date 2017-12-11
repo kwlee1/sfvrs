@@ -1,8 +1,8 @@
 <form #select='ngForm' (submit)='randomizeChars()'>
     <div class='charselect' *ngFor='let c of allchars; let idx=index'>
-        <label for="allchars[idx]">{{c}}</label><input type="checkbox" name="allchars[idx]"
+        <input id={{c}} type="checkbox" name="allchars[idx]"
         [(ngModel)]="character[c]"
-        > <br><img src="assets/img/{{c}}.png" alt="Image of {{c}}">
+        ><label for="{{c}}">{{c}}<br><img src="assets/img/{{c}}.png" alt="Image of {{c}}"></label>
     </div>
     <br> <input type="submit" id="randomBut" value="Randomize!">
 </form>
