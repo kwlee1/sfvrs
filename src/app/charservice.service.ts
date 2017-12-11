@@ -15,17 +15,16 @@ export class CharserviceService {
         return this.choiceArray
     }
 
-    makeChoiceArray(characters){
-        console.log(Object.keys(characters))
+    makeChoiceArray(characters,mirror){
         for(let char in characters){
             if(characters[char] == 'on'){
                 this.choiceArray.push(char)
             }
         }
-        this.randomize(this.choiceArray)
+        this.randomize(this.choiceArray,mirror)
     }
 
-    randomize(array){
+    randomize(array,mirrorMatch){
         // for(let char of characters){
         //     if(characters[char] == 'on'){
         //         this.choiceArray.push(char)

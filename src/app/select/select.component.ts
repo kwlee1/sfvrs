@@ -13,6 +13,7 @@ export class SelectComponent implements OnInit {
     'Necalli','R-Mika','Rashid','Ryu','Urien','Vega','Zangief','Zeku']
 
     character = {}
+    mirror
 
     constructor(private _charService: CharserviceService) { }
 
@@ -26,9 +27,14 @@ export class SelectComponent implements OnInit {
         }
     }
 
+    deselect(){
+        for(let char of this.allchars){
+            this.character[char] = ''
+        }
+    }
+
     randomizeChars(){
-        console.log(this.character)
-        this._charService.makeChoiceArray(this.character)
+        this._charService.makeChoiceArray(this.character,this.mirror)
     }
 
 }

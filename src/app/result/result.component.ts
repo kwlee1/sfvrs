@@ -30,7 +30,6 @@ export class ResultComponent implements OnInit {
 
     reselect(){
         this._charService.randomize(this.charArray)
-
     }
 
 }
