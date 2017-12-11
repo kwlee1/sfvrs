@@ -1,8 +1,26 @@
 .charselect{
     display:inline-block; 
     margin: 2px; 
+    /* background-color: rgb(219, 219, 219);  */
+
+    color: #fd4700; 
+}
+
+.charselect img{
+    display: block; 
 }
 
 *{
     font-family: Impact, Charcoal, sans-serif;
+}
+
+.names{
+    display: inline-block; 
+    /* background-color: rgba(109, 109, 109, 0.466);  */
+    margin: 1px; 
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }

@@ -1,10 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color: rgb(231, 230, 230);
+    background-image: url("/assets/img/wall6.jpg");
+    background-repeat: no-repeat; 
+    background-size: 100%; 
     padding: 10px;  
     font-family: Verdana, Geneva, sans-serif; 
     max-width: 800px; 
 }
 h1{
     font-family: Impact, Charcoal, sans-serif;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    color: #fd4700; 
 }
+
+.headnav{
+    background: #d94234;
+    background-image: -webkit-linear-gradient(top, #d94234, #b86f2b);
+    background-image: -moz-linear-gradient(top, #d94234, #b86f2b);
+    background-image: -ms-linear-gradient(top, #d94234, #b86f2b);
+    background-image: -o-linear-gradient(top, #d94234, #b86f2b);
+    background-image: linear-gradient(to bottom, #d94234, #b86f2b);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.headnav:hover {
+    background: #fcaf3c;
+    background-image: -webkit-linear-gradient(top, #fcaf3c, #d97e34);
+    background-image: -moz-linear-gradient(top, #fcaf3c, #d97e34);
+    background-image: -ms-linear-gradient(top, #fcaf3c, #d97e34);
+    background-image: -o-linear-gradient(top, #fcaf3c, #d97e34);
+    background-image: linear-gradient(to bottom, #fcaf3c, #d97e34);
+    text-decoration: none;
+  }
