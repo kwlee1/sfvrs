@@ -16,6 +16,7 @@ export class CharserviceService {
     }
 
     makeChoiceArray(characters,mirror){
+        this.choiceArray = []
         for(let char in characters){
             if(characters[char] === true){
                 this.choiceArray.push(char)
