@@ -34,7 +34,7 @@ export class CharserviceService {
         let index2 = Math.floor(Math.random()*array.length)
         this.select1 = array[index1]
         this.select2 = array[index2]
-        this._router.navigate(['result'])
+        this._router.navigateByUrl('result')
     }
 
 }

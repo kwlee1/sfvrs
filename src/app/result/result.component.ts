@@ -16,6 +16,7 @@ export class ResultComponent implements OnInit {
     constructor(private _charService:CharserviceService, private _cd:ChangeDetectorRef){}
 
     ngOnInit() {
+        this._cd.detectChanges()
         this.initSelect()
     }
 
