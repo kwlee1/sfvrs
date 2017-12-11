@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CharserviceService } from '../charservice.service'
 
 @Component({
   selector: 'app-result',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 
-  constructor() { }
+    char1
+    char2
 
-  ngOnInit() {
-  }
+    constructor(private _charService:CharserviceService){}
+
+    ngOnInit() {
+        this.initSelect()
+    }
+
+    initSelect(){
+        this.char1 = this._charService.getSelects()[0]
+        this.char2 = this._charService.getSelects()[1]
+    }
+
+    reselect(){
+        this._charService.randomize()
+    }
 
 }
