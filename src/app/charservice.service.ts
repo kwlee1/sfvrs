@@ -15,26 +15,28 @@ export class CharserviceService {
         return this.choiceArray
     }
 
-    makeChoiceArray(characters){
-        console.log(Object.keys(characters))
+    makeChoiceArray(characters,mirror){
         for(let char in characters){
-            if(characters[char] == 'on'){
+            if(characters[char] === true){
                 this.choiceArray.push(char)
             }
         }
-        this.randomize(this.choiceArray)
+        this.randomize(this.choiceArray,mirror)
     }
 
-    randomize(array){
-        // for(let char of characters){
-        //     if(characters[char] == 'on'){
-        //         this.choiceArray.push(char)
-        //     }
-        // }
+    randomize(array,mirrorMatch){
         let index1 = Math.floor(Math.random()*array.length)
-        let index2 = Math.floor(Math.random()*array.length)
         this.select1.next(array[index1])
-        this.select2.next(array[index2])
+        if(mirrorMatch){
+            let index2 = Math.floor(Math.random()*array.length)
+            this.select2.next(array[index2])
+        }else{
+            let arrayCopy = array.slice()
+            arrayCopy.splice(index1,1)
+            let index2 = Math.floor(Math.random()*arrayCopy.length)
+            this.select2.next(arrayCopy[index2])
+        }
+        this.choiceArray = array
         this._router.navigateByUrl('result')
     }
 
