@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SelectComponent } from './select/select.component'
+<<<<<<< HEAD
 import { ResultComponent } from './result/result.component'
+
+const routes: Routes = [
+    { path: '', pathMatch: 'full', component: SelectComponent },
+    { path: 'result', component: ResultComponent }
+=======
 import { AboutComponent } from './about/about.component'
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: SelectComponent },
-    { path: 'result', component: ResultComponent },
-    { path: 'about', component: AboutComponent }
+    { path:'about', pathMatch: 'full', component: AboutComponent }
+>>>>>>> 2d44a2881412a88663eb6078eb89d4874522fb90
 ];
 
 @NgModule({
