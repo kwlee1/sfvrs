@@ -11,6 +11,7 @@ export class ResultComponent implements OnInit {
     char1 = ''
     char2 = ''
     charArray = []
+    resultMirror = true
 
     constructor(private _charService:CharserviceService){}
 
@@ -29,7 +30,7 @@ export class ResultComponent implements OnInit {
     }
 
     reselect(){
-        this._charService.randomize(this.charArray)
+        this._charService.randomize(this.charArray,this.resultMirror)
     }
 
 }

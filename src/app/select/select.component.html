@@ -4,6 +4,6 @@
         [(ngModel)]="character[c]"
         ><label for="{{c}}">{{c}}<br><img src="assets/img/{{c}}.png" alt="Image of {{c}}"></label>
     </div>
-    <br> <label for="mirror">Mirror Match</label><input type="checkbox" name="mirror" checked>
+    <br> <label for="mirror">Mirror Match</label><input type="checkbox" [(ngModel)]="mirror" name="mirror" checked>
     <br> <input type="submit" id="randomBut" value="Randomize!"> <button type="button" name="deselect" (click)="deselect()">Deselect All</button> <button type="button" name="selectAll" (click)="initCharacter()">Select All</button>
 </form>
