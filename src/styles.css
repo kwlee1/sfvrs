@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(231, 230, 230);
+    padding: 10px;  
+    font-family: Verdana, Geneva, sans-serif; 
+}
+h1{
+    font-family: Impact, Charcoal, sans-serif;
+}

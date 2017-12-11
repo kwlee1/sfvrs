@@ -26,8 +26,6 @@ export class ResultComponent implements OnInit {
     }
 
     reselect(){
-        this.char1 = ''
-        this.char2 = ''
         this._charService.randomize(this.charArray)
     }
 
