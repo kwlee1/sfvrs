@@ -19,10 +19,8 @@ export class CharserviceService {
         for(let char in characters){
             if(characters[char] === true){
                 this.choiceArray.push(char)
-                console.log(this.choiceArray)
             }
         }
-        console.log(this.choiceArray)
         this.randomize(this.choiceArray,mirror)
     }
 
@@ -35,7 +33,7 @@ export class CharserviceService {
         }else{
             let arrayCopy = array.slice()
             arrayCopy.splice(index1,1)
-            let index2 = Math.floor(Math.random()*array.length)
+            let index2 = Math.floor(Math.random()*arrayCopy.length)
             this.select2.next(arrayCopy[index2])
         }
         this.choiceArray = array
