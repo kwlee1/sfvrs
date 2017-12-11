@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CharserviceService } from '../charservice.service'
 
 @Component({
   selector: 'app-select',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _charService: CharserviceService) { }
 
   ngOnInit() {
   }
