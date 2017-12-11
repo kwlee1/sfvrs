@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router'
+import { BehaviorSubject } from 'rxjs/BehaviorSubject'
 
 @Injectable()
 export class CharserviceService {
 
     choiceArray = []
-    select1
-    select2
+    select1 = new BehaviorSubject('')
+    select2 = new BehaviorSubject('')
 
     constructor(private _router:Router){}
 
     getSelects(){
-        return [this.select1,this.select2,this.choiceArray]
+        return this.choiceArray
     }
 
     makeChoiceArray(characters){
@@ -32,8 +33,8 @@ export class CharserviceService {
         // }
         let index1 = Math.floor(Math.random()*array.length)
         let index2 = Math.floor(Math.random()*array.length)
-        this.select1 = array[index1]
-        this.select2 = array[index2]
+        this.select1.next(array[index1])
+        this.select2.next(array[index2])
         this._router.navigateByUrl('result')
     }
 

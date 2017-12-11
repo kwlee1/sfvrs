@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CharserviceService } from '../charservice.service'
-import { ChangeDetectorRef } from '@angular/core'
 
 @Component({
   selector: 'app-result',
@@ -13,21 +12,25 @@ export class ResultComponent implements OnInit {
     char2 = ''
     charArray = []
 
-    constructor(private _charService:CharserviceService, private _cd:ChangeDetectorRef){}
+    constructor(private _charService:CharserviceService){}
 
     ngOnInit() {
-        this._cd.detectChanges()
         this.initSelect()
     }
 
     initSelect(){
-        this.char1 = this._charService.getSelects()[0]
-        this.char2 = this._charService.getSelects()[1]
-        this.charArray = this._charService.getSelects()[2]
+        this._charService.select1.subscribe(
+            (response) => { this.char1 = response }
+        )
+        this._charService.select2.subscribe(
+            (response) => { this.char2 = response }
+        )
+        this.charArray = this._charService.getSelects()
     }
 
     reselect(){
         this._charService.randomize(this.charArray)
+
     }
 
 }
