@@ -8,9 +8,9 @@ import { CharserviceService } from '../charservice.service'
 })
 export class SelectComponent implements OnInit {
 
-    allchars = ['abigail','akuma','alex','balrog','birdie','cammy','chunli','dhalsim',
-    'ed','fang','guile','ibuki','juri','karin','ken','kolin','laura','mbison','menat','nash',
-    'necalli','r-mika','rashid','ryu','urien','vega','zangief','zeku']
+    allchars = ['Abigail','Akuma','Alex','Balrog','Birdie','Cammy','Chunli','Dhalsim',
+    'Ed','Fang','Guile','Ibuki','Juri','Karin','Ken','Kolin','Laura','Mbison','Menat','Nash',
+    'Necalli','R-Mika','Rashid','Ryu','Urien','Vega','Zangief','Zeku']
 
     character = {}
 
