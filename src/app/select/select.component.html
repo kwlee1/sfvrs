@@ -2,7 +2,7 @@
     <div class='charselect' *ngFor='let c of allchars; let idx=index'>
         <input id={{c}} type="checkbox" name="allchars[idx]"
         [(ngModel)]="character[c]"
-        ><label for="{{c}}">{{c}}<br><img src="assets/img/{{c.toLowerCase()}}.png" alt="Image of {{c}}"></label>
+        ><label for="{{c}}">{{c}}<br><img src="assets/img/{{c}}.png" alt="Image of {{c}}"></label>
     </div>
     <br> <input type="submit" id="randomBut" value="Randomize!">
 </form>
