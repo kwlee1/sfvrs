@@ -27,6 +27,7 @@ export class SelectComponent implements OnInit {
     }
 
     randomizeChars(){
+        console.log(this.character)
         this._charService.makeChoiceArray(this.character)
     }
 
