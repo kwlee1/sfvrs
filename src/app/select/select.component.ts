@@ -16,8 +16,18 @@ export class SelectComponent implements OnInit {
 
     constructor(private _charService: CharserviceService) { }
 
-
     ngOnInit() {
+        this.initCharacter()
+    }
+
+    initCharacter(){
+        for(let char of this.allchars){
+            this.character[char] = 'on'
+        }
+    }
+
+    randomizeChars(){
+        this._charService.randomize(this.character)
     }
 
 }
