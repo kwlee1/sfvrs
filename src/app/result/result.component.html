@@ -1,3 +1,5 @@
-<img src="assets/img/{{char1}}.png" alt="Image of {{c}}"> <img id="vs" src="assets/img/vs2.png" alt=""> <img src="assets/img/{{char2}}.png" alt="Image of {{c}}">
+<div class="resultchar">{{char1}} <br> <img src="assets/img/{{char1}}.png" alt="Image of {{c}}"></div>
+<img id="vs" src="assets/img/vs2.png" alt="VS Icon"> 
+<div class="resultchar">{{char2}} <br> <img src="assets/img/{{char2}}.png" alt="Image of {{c}}"></div>
 <br> <label for="resMirror">Mirror Match</label><input type="checkbox" name="resMirror" [(ngModel)]="resultMirror">
 <br> <button type="button" id="reselect" (click)="reselect()">Reselect Characters</button>
