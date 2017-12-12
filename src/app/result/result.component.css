@@ -8,3 +8,13 @@
     font-family: Impact, Charcoal, sans-serif;
     font-size: 16pt; 
 }
+
+.names{
+    margin: 1px; 
+    color: #fd4700; 
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

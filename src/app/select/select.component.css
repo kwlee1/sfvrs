@@ -1,7 +1,7 @@
 .charselect{
     display:inline-block; 
     margin: 2px; 
-    color: #fd4700; 
+    
 }
 
 .charselect img{
@@ -15,6 +15,7 @@
 .names{
     display: inline-block; 
     margin: 1px; 
+    color: #fd4700; 
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
