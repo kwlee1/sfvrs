@@ -8,9 +8,9 @@ import { CharserviceService } from '../charservice.service'
 })
 export class SelectComponent implements OnInit {
 
-    allchars = ['Abigail','Akuma','Alex','Balrog','Birdie','Cammy','Chunli','Dhalsim',
+    allchars = ['Abigail','Akuma','Alex','Balrog','Birdie','Blanka','Cammy','Chunli','Dhalsim',
     'Ed','Fang','Guile','Ibuki','Juri','Karin','Ken','Kolin','Laura','Mbison','Menat','Nash',
-    'Necalli','R-Mika','Rashid','Ryu','Urien','Vega','Zangief','Zeku']
+    'Necalli','R-Mika','Rashid','Ryu','Sakura','Urien','Vega','Zangief','Zeku']
 
     character = {}
     mirror = true
